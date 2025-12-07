@@ -1,0 +1,68 @@
+:root {
+    --bg: #000;
+    --panel: #111;
+    --border: 4px solid #444;
+    --text: #fff;
+    --accent: #ffcc00;
+}
+
+html, body {
+    margin: 0;
+    background: var(--bg);
+    font-family: 'Press Start 2P', monospace;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 전체 게임 박스 */
+.game-wrapper {
+    width: 400px;
+    height: 750px;
+    background: var(--panel);
+    border: var(--border);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 상단 UI */
+.top-info {
+    width: 100%;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-around;
+    background: #151515;
+    border-bottom: var(--border);
+    font-size: 10px;
+}
+
+.info-box {
+    padding: 4px 6px;
+    border: 3px solid #333;
+    background: #222;
+}
+
+/* 캔버스 */
+#gameCanvas {
+    background: #000;
+    width: 400px;
+    height: 700px;
+    image-rendering: pixelated;
+    border-top: var(--border);
+    border-bottom: var(--border);
+    display: block;
+}
+
+/* 하단 안내 */
+.bottom-info {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 10px;
+    background: #151515;
+    border-top: var(--border);
+}

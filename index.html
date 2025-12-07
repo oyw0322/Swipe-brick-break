@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>스와이프 벽돌깨기</title>
+<link rel="stylesheet" href="css/style.css">
+
+<!-- 8비트 폰트 -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="game-wrapper">
+
+    <!-- 상단 UI -->
+    <div class="top-info">
+        <div class="info-box">Score: <span id="score">0</span></div>
+        <div class="info-box">Balls: <span id="ballsCount">1</span></div>
+        <div class="info-box">Round: <span id="round">1</span></div>
+    </div>
+
+    <!-- 게임 캔버스 -->
+    <canvas id="gameCanvas" width="400" height="700"></canvas>
+
+    <!-- 하단 조작 안내 -->
+    <div class="bottom-info">
+        <p>← →  각도 조절</p>
+        <p>SPACE바: 발사</p>
+        <p>좌클릭: 예측 경로 표시</p>
+    </div>
+
+</div>
+<script src="js/game.js"></script>
+</body>
+</html>
